@@ -43,3 +43,5 @@ client.on('message', msg => {
 });
 
 client.login(ayarlar.token);
+
+//
