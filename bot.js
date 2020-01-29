@@ -341,3 +341,68 @@ message.guild.createChannel(`🎮》LOL`, 'voice')
     
 }
 });
+
+//botpanel
+
+client.on('message', async message => {
+  const ms = require('ms');
+  const args = message.content.slice(prefix.length).trim().split(/ +/g);
+  const command = args.shift().toLowerCase();
+  let u = message.mentions.users.first() || message.author;
+    if (message.content.toLowerCase() ===  '!panel') {
+  if (message.guild.channels.find(channel => channel.name === "Bot Kullanımı")) return message.channel.send(" Bot Paneli Zaten Ayarlanmış.")
+  message.channel.send(`Bot Bilgi Kanallarının kurulumu başlatılsın mı? başlatılacak ise **evet** yazınız.`)
+      if (!message.member.hasPermission('ADMINISTRATOR'))
+  return message.channel.send(" Bu Kodu `Yönetici` Yetkisi Olan Kişi Kullanabilir.");
+      message.channel.awaitMessages(response => response.content === 'evet', {
+        max: 1,
+        time: 10000,
+        errors: ['time'],
+      })
+    .then((collected) => {
+   message.guild.createChannel('Bot Kullanımı', 'category', [{
+  id: message.guild.id,
+  deny: ['CONNECT']
+}])
+
+
+
+        
+ message.guild.createChannel(`Bellek Kullanımı: ${(process.memoryUsage().heapUsed / 1024 / 1024).toFixed(2)} MB`, 'voice', [{
+  id: message.guild.id,
+  deny: ['CONNECT']
+}])
+.then(channel =>
+ channel.setParent(message.guild.channels.find(channel => channel.name === "Bot Kullanımı")));
+ message.guild.createChannel(`Sunucular: ${client.guilds.size.toLocaleString()}`, 'voice', [{
+  id: message.guild.id,
+  deny: ['CONNECT']
+}])
+.then(channel =>
+       channel.setParent(message.guild.channels.find(channel => channel.name === "Bot Kullanımı")));
+       message.guild.createChannel(`Toplam Kanal: ${client.channels.size.toLocaleString()}`, 'voice', [{
+        id: message.guild.id,
+        deny: ['CONNECT']
+      }])
+.then(channel =>
+             channel.setParent(message.guild.channels.find(channel => channel.name === "Bot Kullanımı")));
+             message.guild.createChannel(`Ping: ${client.ping}`, 'voice', [{
+              id: message.guild.id,
+              deny: ['CONNECT']
+            }])
+            .then(channel => channel.setParent(message.guild.channels.find(channel => channel.name === "Bot Kullanımı")));
+            message.guild.createChannel('Yapımcım: Tekne#0691', 'voice', [{
+              id: message.guild.id,
+              deny: ['CONNECT']
+            }])
+            .then(channel =>
+              channel.setParent(message.guild.channels.find(channel => channel.name === "Bot Kullanımı")));
+             message.guild.createChannel(`Kütüphanesi: Discord.js`, 'voice')
+            
+.then(channel =>
+ channel.setParent(message.guild.channels.find(channel => channel.name === "Bot Kullanımı")));
+        message.channel.send('Bot Bilgi Panelini Oluturdum');
+                 })   
+    
+}
+});
