@@ -3,7 +3,7 @@ const Discord = require('discord.js');
 exports.run = async (client, message, params) => {
     if(message.channel.type == "dm")  return;
   if(message.channel.type !== "text") return;
-  var channel = client.channels.find('id', '540269834835853340')
+  var channel = client.channels.find('id', '672020749518635022')
     const asdf = await client.channels.get(message.channel.id).createInvite()
   message.delete();
   const embed = new Discord.RichEmbed()
@@ -29,5 +29,5 @@ exports.run = async (client, message, params) => {
 exports.help = {
   name: 'canlı-destek',
   description: 'Canlı Destek Tablebi Oluşturur.',
-  usage: 'g!canlı-destek'
+  usage: '!canlı-destek'
 };

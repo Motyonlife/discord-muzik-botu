@@ -7,7 +7,7 @@ var prefix = ayarlar.prefix;
 
 module.exports = client => {
 var oyun = [
-        "g!yardım - Otorol Güncellendi🔥",
+        "Tekne",
         "g!yardım - Küfür Engel✨",
         "g!yardım - Reklam Engel⭐️"  
     ];
