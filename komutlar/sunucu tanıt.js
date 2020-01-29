@@ -8,7 +8,7 @@ exports.run = async (client, message, args) => {
     .setColor(0xFF0000)
     .setTimestamp()
     .setAuthor(message.author.username, message.author.avatarURL)
-    .addField(':warning: Uyarı :warning:', '`g!sunucutanıt` adlı komutu özel mesajlarda kullanamazsın.')
+    .addField(':warning: Uyarı :warning:', '`!sunucutanıt` adlı komutu özel mesajlarda kullanamazsın.')
     return message.author.sendEmbed(ozelmesajuyari); }
     if(!message.member.hasPermission("MANAGE_GUILD")) return message.channel.send("Bu Komutu kullanmanız için `Sunucu_Yönet` Yetkisine sahip olmalısınız.")
     let kullanildii = JSON.parse(fs.readFileSync('./sunucutanıt.json', 'utf8'));
@@ -19,9 +19,9 @@ exports.run = async (client, message, args) => {
   {
         const embed = new Discord.RichEmbed()
   .setTitle('BAŞARILI')
-  .addField('Sunucu burada tanıtıldı! (https://discord.gg/Cg48Za9).')
+  .addField('Sunucu burada tanıtıldı! (https://discord.gg/BAbMT9G).')
   .addField('12 saat Sonra sunucunuzu Tekrardan Tanıtabilirsiniz.')
-  .addField('Sunucunu tanıtabilmek için beni ekle! https://goo.gl/2WhBSB')
+  .addField('Sunucunu tanıtabilmek için beni ekle! http://bit.ly/teknes')
   .setColor('GREEN')
  message.channel.sendEmbed(embed);
     message.channel.createInvite({maxAge: 0}).then((invite) => {
@@ -30,9 +30,9 @@ exports.run = async (client, message, args) => {
             .addField(` Sunucu İsmi`, message.guild.name, true)
       .addField(` Sunucudakı Üye Sayısı`, message.guild.members.size, true)
       .addField(` Sunucu Davet Linki`, invite.url, true)
-            .setColor('RANDOM')
+            .setColor('#7289DA')
       .setThumbnail(message.guild.iconURL)
-       client.channels.get('KANAL İD').send(embed)
+       client.channels.get('672026477189136392').send(embed)
             });
   kullanildii[message.guild.id].gunlukkullanim = 1
     
@@ -68,5 +68,5 @@ exports.conf = {
 exports.help = {
     name: 'sunucunutanıt',
     description: 'Sunuzunuzu Tanıtmak İçin En Uygun Kod!',
-    usage: 'sunucutanıt'
+    usage: '!sunucutanıt'
 }
