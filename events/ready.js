@@ -9,7 +9,7 @@ module.exports = client => {
 var oyun = [
         "7/24 Online",
         "!yardım",
-        "discord.gg/jHtEfuX"  
+        "tekne.glitch.me/"  
     ];
 
     setInterval(function() {
