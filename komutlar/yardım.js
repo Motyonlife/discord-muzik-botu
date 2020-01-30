@@ -14,7 +14,7 @@ exports.run = (client, message, params) => {
     .setColor(0x00AE86)
     .setTimestamp()
     .setAuthor(message.author.username, message.author.avatarURL)
-    .setDescription('Web Sitemizi kontrol et.: https://tekne.glitch.me/ :postbox:');
+    .setDescription('Web Sitemizi kontrol ediniz.: https://tekne.glitch.me/ :postbox:');
     message.channel.sendEmbed(ozelmesajkontrol) }
   } else {
     let command = params[0];
