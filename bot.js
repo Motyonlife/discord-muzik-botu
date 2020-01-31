@@ -78,6 +78,20 @@ client.unload = command => {
   });
 };
 
+//7/24
+const http = require('http');
+const express = require('express');
+const app = express();
+app.get("/", (request, response) => {
+  console.log("Botu açık tutmak için yeniden bağlandım!");
+  response.sendStatus(200);
+});
+app.listen(8000);
+setInterval(() => {
+  http.get(`http://teknebot.glitch.me/`);//Buraya glitch linkinizi doğru şekilde giriniz. ve Botunuz 7/24 olacaktır!
+}, 280000)
+   
+//7/24
 
 client.on('message', msg => {
   if (msg.content.toLowerCase() === 'sa') {
@@ -96,6 +110,7 @@ client.elevation = message => {
 };
 
 var regToken = /[\w\d]{24}\.[\w\d]{6}\.[\w\d-_]{27}/g;
+
 // client.on('debug', e => {
 //   console.log(chalk.bgBlue.green(e.replace(regToken, 'that was redacted')));
 // });
