@@ -8,8 +8,8 @@ var prefix = ayarlar.prefix;
 module.exports = client => {
 var oyun = [
         "7/24 Online",
-        "!yardım",
-        "tekne.glitch.me/"  
+        "a!yardım",
+        "ancesbot.glitch.me/"  
     ];
 
     setInterval(function() {
