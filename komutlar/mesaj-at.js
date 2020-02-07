@@ -18,7 +18,7 @@ exports.run = (client, message, args) => {
   message.reply('Mesajını Gönderdim.')
   const embed = new Discord.RichEmbed()
   .setColor('RANDOM')
-  .setTitle(`**Sahibimden Bir Mesajın Var**`)
+  .setTitle(`**XQ Bot**`)
   .setTimestamp()
   .setDescription(reason);
   return user.send(embed);
