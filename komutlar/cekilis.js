@@ -97,7 +97,7 @@ var filter = m => m.author.id === message.author.id;
 exports.conf = {
   enabled: true,
   guildOnly: false,
-  aliases: [],
+  aliases: ["çekiliş", "giveaway"],
   permLevel: 2
 };
 exports.help = {

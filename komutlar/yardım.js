@@ -7,26 +7,26 @@ exports.run = async (client, message, args) => {
   
   if (!arg[0]) {
   const embed = new Discord.RichEmbed()
-  .setTitle('XQ Yardım Menüsü')
-  .setDescription(`:white_small_square: \`${p}yardım eğlence\` = Eğlence Komutlarını Listeler. \n\n:white_small_square: \`${p}yardım moderasyon\` = Moderasyon Komutlarını Listeler. \n\n:white_small_square: \`${p}yardım müzik\` = Müzik Komutlarını Listeler.`)
+  .setTitle('🎲XQ Yardım Menüsü')
+  .setDescription(`:white_small_square: \`${p}yardım eğlence\` = Eğlence Komutlarını Listeler. \n\n:white_small_square: \`${p}yardım yetkili\` = Yetkili Komutlarını Listeler. \n\n:white_small_square: \`${p}yardım müzik\` = Müzik Komutlarını Listeler.`)
   message.channel.send({embed})
   }
-   if (arg === 'Eğlence' || arg === '1') {
+   if (arg === 'eğlence' || arg === '1') {
   const embed = new Discord.RichEmbed()
-  .setTitle('Eğlence Komutları')
+  .setTitle('🌈Eğlence Komutları')
   .setDescription(`:white_small_square: \`${p}mcödül\` = Send a Minecraft Achievement image to the channel \n:white_small_square: \`${p}servericon\` = Serverin iconunu gösterir.  \n:white_small_square: \`${p}yaz\` = İstediğiniz şeyi bota yazdırır. \n:white_small_square: \`${p}doğrulukcesaret\` = Doğruluk cesaret oynarsınız.`)
   message.channel.send(embed)
   }
-  if (arg === 'Müzik' || arg === '2') {
+  if (arg === 'müzik' || arg === '2') {
       const embed = new Discord.RichEmbed()
-      .setTitle('Müzik komutları:')
+      .setTitle('🎼Müzik komutları:')
       .setDescription(`:white_small_square: \`${p}oynat\` = Bot İstediğiniz Müziği Açar. \n:white_small_square: \`${p}durdur\` = Bot Müziği Durdurur. \n:white_small_square: \`${p}devam\` = Bot Müziği Devam Ettirir. \n:white_small_square: \`${p}ses\` = Müziğin Ses Seviyesini Ayarlar.`)
       return message.channel.send(embed);
 }
-   if (arg === 'Yetkili' || arg === '3') {
+   if (arg === 'yetkili' || arg === '3') {
       const embed = new Discord.RichEmbed()
-      .setTitle('Yetkili komutları:')
-      .setDescription(`:white_small_square: \`${p}otorol\` = Sunucu için otorol ayarlar. \n:white_small_square: \`${p}sayaç\` = Sunucu için sayaç ayarlar.`)
+      .setTitle('🔨Yetkili komutları:')
+      .setDescription(`:white_small_square: \`${p}clear\` = Belirlenen miktarda mesajı siler. \n:white_small_square: \`${p}mute\` = Etiketlediğiniz kişiye belirttiğiniz süre kadar mute atar. \n:white_small_square: \`${p}reklam-taraması\` = Kullanıcıların Oynuyor mesajındaki ve Kullanıcı adlarındaki reklamları tarar. \n:white_small_square: \`${p}oylama\` = Oylama yapmanızı sağlar. \n:white_small_square: \`${p}çekiliş\` = Sunucuda çekiliş yapmanı sağlar.`)
       return message.channel.send(embed);
 }
 }
