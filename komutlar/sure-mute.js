@@ -4,7 +4,7 @@ const ayarlar = require('../ayarlar.json');
 const prefix = ayarlar.prefix;
 
 
-var mutelirolu = "Muted" //MUTELENDİGİ ZAMAN VERİLECEK ROLU  BURAYA YAZINIZ...
+var mutelirolu = "Muted"
 
 module.exports.run = async (bot, message, args) => {
 

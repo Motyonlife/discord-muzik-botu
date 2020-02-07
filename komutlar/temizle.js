@@ -1,10 +1,10 @@
 const Discord = require('discord.js');
 exports.run = function (client, message, args) {
-  if (!message.member.hasPermission("MANAGE_MESSAGES")) return message.reply(":x: İzin hatası");
+  if (!message.member.hasPermission("MANAGE_MESSAGES")) return message.reply("❌ Bu komutu kullanabilmen için: Mesajları Yönet yetkisine sahip olman gerek!");
   if (!args[0]) return message.channel.send("Silinecek mesajın miktarını yaz!");
   message.delete()
   message.channel.bulkDelete(args[0]).then(() => {
-    message.channel.send(`:white_check_mark: ${args[0]} tane mesaj silindi`)
+    message.channel.send(`✈️ ${args[0]} tane mesaj havaya uçtu!`)
   })
 }
 
