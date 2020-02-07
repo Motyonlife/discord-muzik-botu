@@ -8,7 +8,7 @@ exports.run = async (client, message, args) => {
   if (!arg[0]) {
   const embed = new Discord.RichEmbed()
   .setTitle('🎲XQ Yardım Menüsü')
-  .setDescription(`:white_small_square: \`${p}yardım eğlence\` = Eğlence Komutlarını Listeler. \n\n:white_small_square: \`${p}yardım yetkili\` = Yetkili Komutlarını Listeler. \n\n:white_small_square: \`${p}yardım müzik\` = Müzik Komutlarını Listeler.`)
+  .setDescription(`:white_small_square: \`${p}yardım eğlence\` = Eğlence Komutlarını Listeler. \n\n:white_small_square: \`${p}yardım yetkili\` = Yetkili Komutlarını Listeler. \n\n:white_small_square: \`${p}müzik\` = Müzik Komutlarını Listeler.`)
   message.channel.send({embed})
   }
    if (arg === 'eğlence' || arg === '1') {
@@ -20,7 +20,7 @@ exports.run = async (client, message, args) => {
   if (arg === 'müzik' || arg === '2') {
       const embed = new Discord.RichEmbed()
       .setTitle('🎼Müzik komutları:')
-      .setDescription(`:white_small_square: \`${p}oynat\` = Bot İstediğiniz Müziği Açar. \n:white_small_square: \`${p}durdur\` = Bot Müziği Durdurur. \n:white_small_square: \`${p}devam\` = Bot Müziği Devam Ettirir. \n:white_small_square: \`${p}ses\` = Müziğin Ses Seviyesini Ayarlar.`)
+      .setDescription(`:white_small_square: \`${p}çal\` = Bot İstediğiniz Müziği Açar. \n:white_small_square: \`${p}kapat\` = Bot Müziği Durdurur. \n:white_small_square: \`${p}devam\` = Bot Müziği Devam Ettirir. \n:white_small_square: \`${p}ses\` = ``!ses (1-100) Müziğin Ses Seviyesini Ayarlar.`)
       return message.channel.send(embed);
 }
    if (arg === 'yetkili' || arg === '3') {

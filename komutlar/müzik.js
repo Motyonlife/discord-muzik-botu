@@ -4,7 +4,7 @@ const Discord = require('discord.js');
 exports.run = function(client, message) {
 const embed = new Discord.RichEmbed()
 .setColor('RANDOM')
-.setTitle('» Müzik Komutları')
+.setTitle('» 🎼Müzik Komutları')
 .setTimestamp()
 .addField('» -Çal- Müzik Açar', '!çal ')
 .addField('» -Sıra- Şarkı Kuyruğunu Gösterir', '!sıra')
