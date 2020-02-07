@@ -1,6 +1,6 @@
 exports.run = (client,message) => {
 var xir = client.emojis.get("675372467350667294")
-message.channel.send('sss')
+message.channel.send('✨')
   
 }
   
@@ -13,6 +13,6 @@ message.channel.send('sss')
 
 module.exports.help = {
   name: 'davet', 
-  description: 'Test iconunu gösterir',
+  description: 'Botun davet linkini atar.',
   usage: 'davet'
 };
