@@ -3,13 +3,13 @@ const Discord = require('discord.js');
 exports.run = async (client, message, params) => {
     if(message.channel.type == "dm")  return;
   if(message.channel.type !== "text") return;
-  var channel = client.channels.find('id', '672027091298156544')
+  var channel = client.channels.find('id', '675352099734814778')
     const asdf = await client.channels.get(message.channel.id).createInvite()
   message.delete();
   const embed = new Discord.RichEmbed()
-  .setTitle("»  Bot | Canlı Destek")
+  .setTitle("»  XQ | Canlı Destek")
   .setDescription("**Canlı Desteği kullandğın için teşekkür ederiz, Seninle ekibim ilgilenicektir lütfen bekle!**")
-  .setFooter("30 Saniye içinde geri dönülmezse lütfen iletişime geçin <@485741578615521291>")
+  .setFooter("30 Saniye içinde geri dönülmezse lütfen iletişime geçin!")
  message.channel.send(embed)
       const invite = new Discord.RichEmbed()
   .setAuthor("» Canlı Destek | Talep")
@@ -22,7 +22,7 @@ exports.run = async (client, message, params) => {
   exports.conf = {
   enabled: true,
   guildOnly: false,
-  aliases: ['canlıdestek'],
+  aliases: ['canlıdestek','iletişim','iletisim','canlidestek'],
   permLevel: 0
 };
 
