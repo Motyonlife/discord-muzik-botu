@@ -9,7 +9,7 @@ module.exports = client => {
 var oyun = [
         "🌟 !yardım",
         "✨ !davet",
-        "⭐️ !yardım"  
+        ""  
     ];
 
     setInterval(function() {
