@@ -25,7 +25,7 @@ const Discord = require('discord.js');
        .setColor("RANDOM")
        .setThumbnail(client.user.avatarURL)
        .setTimestamp()
-       .setFooter('Bot', client.user.avatarURL)
+       .setFooter('XQ Bot', client.user.avatarURL)
 
        .addField(`**Oylama**`, `**${question}**`)).then(function(message) {
 
