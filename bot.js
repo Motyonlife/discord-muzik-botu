@@ -137,7 +137,7 @@ client.on("message", message => {
          .addField('Mesajı Gönderenin ID', ` \`\`\`${message.author.id}\`\`\` `)
          .addField(`Gönderilen Mesaj`, message.content)
          .setThumbnail(message.author.avatarURL) 
-    client.channels.get("672034510656765962").send(dmlog);
+    client.channels.get("675346799644639233").send(dmlog);
     }
 });
 
