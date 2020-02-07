@@ -5,7 +5,7 @@ let user = message.author.username;
 let guild = message.guild.name;
 let guildid = message.guild.id;
 let kanal = message.channel.name;
-let channel = bot.channels.get("672034510656765962")//bug repot kanal id
+let channel = bot.channels.get("675351693977714708")
 let embed = new Discord.RichEmbed()
 .setTitle("Bug Report")
 .setThumbnail("https://discordapp.com/channels/672020749518635019/672116206677000192/672401811201851392")
@@ -16,7 +16,7 @@ let embed = new Discord.RichEmbed()
 .addField("Kanal", kanal, true)
 .setColor("#f49542")
 
-message.channel.send(":white_check_mark:  **| Bug Report Başarı İle İletildi.**")
+message.channel.send(":white_check_mark:  **| Bug Başarı İle İletildi.**")
 channel.send(embed).then(i => i.react("⏳"))
 
   
@@ -32,6 +32,6 @@ exports.conf = {
 
 exports.help = {
   name: 'bug-bildir',
-  description: 'Çalışıp para kazanırsınız.',
+  description: 'Çalışıp bize yardım edebilirsiniz .',
   usage: 'bug-bildir'
 }

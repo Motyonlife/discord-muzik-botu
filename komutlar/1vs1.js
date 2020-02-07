@@ -102,13 +102,13 @@ exports.run = async (client, message, args) => {
 exports.conf = {
   enabled: true,
   guildOnly: false,
-  aliases: ['1vs1', '1v1', 'savaş'],
+  aliases: ['savaş', 'düello', 'savas'],
   permLevel: `Yetki gerekmiyor.`
 };
 
 exports.help = {
-  name: 'düello',
+  name: 'savaş',
   category: "eğlence",
   description: 'İstediğiniz bir kişi ile düello atarsınız!',
-  usage: 'düello <@kullanıcı>'
+  usage: 'savaş <@kullanıcı>'
 };

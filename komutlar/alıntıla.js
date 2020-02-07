@@ -32,11 +32,11 @@ message.channel.send(embed)
 exports.conf = {
   enabled: true,
   guildOnly: false,
-  aliases: ['alinti','alıntıla','alintila','quote', 'qt'],
+  aliases: ['mesaj-bilgi','mesajbilgi','mesaj-hakkında','mesajhakkında', 'mesaj-sorgula'],
   permLevel: 0,
 };
 exports.help = {
-  name: 'alıntı',
+  name: 'mesaj-bilgi',
   description: 'Bir Mesaj Alıntılar.',
-  usage: '!alıntı mesaj id'
+  usage: '!mesaj-bilgi mesaj id'
 };
