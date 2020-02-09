@@ -6,15 +6,15 @@ exports.run = (client, message, args) => {
   if (user.id === message.author.id) return message.reply('Kendine sarılamassın olum sakin.');
 
     
-  if ( message.react('😍')) {
+  if ( message.react('👏🏽')) {
       var gif = [
       '', '', '', '', '', '', ''];
       var gifler = gif[Math.floor(Math.random() * gif.length)];
   }
     
-    if (message.react('😍')) {
+    if (message.react('👏🏽')) {
     const op = new Discord.RichEmbed()
-    .setDescription(`<@${message.author.id}>` + ` <@${user.id}>'a sarıldı 💋`)
+    .setDescription(`<@${message.author.id}>` + ` <@${user.id}>'a sarıldı 🕺🏽🏃`)
     .setColor('RANDOM')
     .setImage(gifler)
     return message.channel.send(op)
