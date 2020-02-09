@@ -14,7 +14,7 @@ exports.run = async (client, message, args) => {
    if (arg === 'eğlence' || arg === '1') {
   const embed = new Discord.RichEmbed()
   .setTitle('🌈Eğlence Komutları')
-  .setDescription(`:white_small_square: \`${p}mcödül\` = Send a Minecraft Achievement image to the channel \n:white_small_square: \`${p}servericon\` = Serverin iconunu gösterir.  \n:white_small_square: \`${p}yaz\` = İstediğiniz şeyi bota yazdırır. \n:white_small_square: \`${p}doğrulukcesaret\` = Doğruluk cesaret oynarsınız. \n:white_small_square: \`${p}savaş\` = İstediğiniz bir kişi ile düello atarsınız! \n:white_small_square: \`${p}youtube\` = !youtube "Aramak İstediğiniz Şey" İsterseniz bir komut hakkında yardım eder..`)
+  .setDescription(`:white_small_square: \`${p}mcödül\` = Send a Minecraft Achievement image to the channel \n:white_small_square: \`${p}servericon\` = Serverin iconunu gösterir.  \n:white_small_square: \`${p}yaz\` = İstediğiniz şeyi bota yazdırır. \n:white_small_square: \`${p}doğrulukcesaret\` = Doğruluk cesaret oynarsınız. \n:white_small_square: \`${p}savaş\` = İstediğiniz bir kişi ile düello atarsınız! \n:white_small_square: \`${p}youtube\` = !youtube "Aramak İstediğiniz Şey" İsterseniz bir komut hakkında yardım eder. :white_small_square: \`${p}avatar\` = Belirtilen Kişinin veya Komutu Yazan Kişinin Avatarını Atar.`)
   message.channel.send(embed)
   }
   if (arg === 'müzik' || arg === '2') {
