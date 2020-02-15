@@ -21,6 +21,6 @@ console.log(`BOT: Şu an ` + client.channels.size + ` adet kanala, ` + client.gu
 
         var random = Math.floor(Math.random()*(oyun.length-0+1)+0);
 
-        client.user.setGame(oyun[random], "https://www.twitch.tv/ilhancan/");
+        client.user.setGame(oyun[random], "https://www.twitch.tv/ilh4ncan/");
         }, 2 * 18000);
 }
