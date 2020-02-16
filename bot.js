@@ -990,3 +990,37 @@ message.guild.createChannel(`💤》AFK`, 'voice')
     
 }
 });
+
+//Emoji Rol
+
+client.on("guildMemberAdd", async member => {
+  if (db.has(`kayıt_${member.guild.id}`)) {
+    let srol = await db.fetch(`kayıtrol_${member.guild.id}`)
+    if (!srol) return
+    await member.addRole(srol)
+  }
+})
+
+client.on('raw', event => {
+    if (event.t === 'MESSAGE_REACTION_ADD'){
+        let channel = client.channels.get(event.d.channel_id);
+        let message = channel.fetchMessage(event.d.message_id).then(msg=> {
+        let user = msg.guild.members.get(event.d.user_id);
+        
+          if (db.has(`kayıt_${msg.guild.id}`)) {
+            if (user.id != client.user.id){
+              let mesaj = db.get(`kayıtmesaj_${msg.guild.id}`)
+              let srol = db.get(`kayıtrol_${msg.guild.id}`)
+              if (msg.id == mesaj) {
+                var roleObj = msg.guild.roles.get(srol);
+                var memberObj = msg.guild.members.get(user.id);
+                    memberObj.removeRole(roleObj)
+                if (db.has(`kayıtotorol_${msg.guild.id}`)) {
+                  memberObj.addRole(db.get(`kayıtotorol_${msg.guild.id}`))
+                } 
+              }
+            }
+          }
+        })
+        }
+});
