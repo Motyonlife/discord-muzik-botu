@@ -2,7 +2,7 @@ const Discord = require('discord.js')
 
 exports.run = async (client, message, args) => {
   
-  let p = '!'
+  let p = 'x!'
   let arg = args.slice(0).join(' ');
   
   if (!arg[0]) {
