@@ -93,12 +93,6 @@ setInterval(() => {
    
 //7/24
 
-client.on('message', msg => {
-  if (msg.content.toLowerCase() === 'sa') {
-    msg.reply('☄️Aleyküm selam,  ``XQ Bot``');
-  }
-});
-
 client.elevation = message => {
   if(!message.guild) {
 	return; }
