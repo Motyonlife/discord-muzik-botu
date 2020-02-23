@@ -3,7 +3,7 @@ const Discord = require('discord.js');
 exports.run = async (client, message, params) => {
     if(message.channel.type == "dm")  return;
   if(message.channel.type !== "text") return;
-  var channel = client.channels.find('id', '675352099734814778')
+  var channel = client.channels.find('id', '681056237617676299')
     const asdf = await client.channels.get(message.channel.id).createInvite()
   message.delete();
   const embed = new Discord.RichEmbed()

@@ -5,7 +5,7 @@ let user = message.author.username;
 let guild = message.guild.name;
 let guildid = message.guild.id;
 let kanal = message.channel.name;
-let channel = bot.channels.get("675351693977714708")
+let channel = bot.channels.get("681054402987032587")
 let embed = new Discord.RichEmbed()
 .setTitle("Bug Report")
 .setThumbnail("https://discordapp.com/channels/672020749518635019/672116206677000192/672401811201851392")
