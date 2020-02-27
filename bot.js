@@ -88,7 +88,7 @@ app.get("/", (request, response) => {
 });
 app.listen(8000);
 setInterval(() => {
-  http.get(`http://oto.glitch.me/`);
+  http.get(`http://duu6.glitch.me/`);
 }, 280000)
    
 //7/24
