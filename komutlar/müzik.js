@@ -4,7 +4,7 @@ const Discord = require('discord.js');
 exports.run = function(client, message) {
 const embed = new Discord.RichEmbed()
 .setColor('RANDOM')
-.setTitle('» 🎼Müzik Komutları')
+.setTitle('Müzik Komutları')
 .setTimestamp()
 .addField('» -Çal- Müzik Açar', '!çal ')
 .addField('» -Sıra- Şarkı Kuyruğunu Gösterir', '!sıra')
@@ -14,7 +14,7 @@ const embed = new Discord.RichEmbed()
 .addField('» -Ses- Müziğe Ses Ve Bass Eklersiniz', '!ses 1/100')
 .addField('» -Çalan- Çalan Şarkının Bilgisini Verir', '!çalan')
 .addField('» -Geç- Şarkıyı Geçersiniz', '!geç')
-.setFooter('XQ Müzik Menü', client.user.avatarURL)
+.setFooter('Duu6 Müzik Menü', client.user.avatarURL)
 .setTimestamp()
 .setThumbnail(client.user.avatarURL)
 message.channel.send(embed)
@@ -23,7 +23,7 @@ message.channel.send(embed)
 exports.conf = {
   enabled: true,
   guildOnly: false, 
-  aliases: ['müzik','muzik'], 
+  aliases: ['müzik','muzik', 'music'], 
   permLevel: 0 
 };
 
