@@ -30,5 +30,5 @@ exports.conf = {
 exports.help = {
   name: 'müzikdetay',
   description: 'Tüm komutları gösterir.',
-  usage: 'müzikdetau'
+  usage: 'müzikdetay'
 };

@@ -8,7 +8,7 @@ exports.run = (client, message, args) => {
     .setAuthor(`Duu6 | Müzik Komutları`, client.user.avatarURL) 
       .setDescription('**[]()**')
 .setThumbnail(client.user.avatarURL)
-      .addField('**Komutlar:**', '`play`, `stop`, `pause`, `resume`, `volume`, `queue`, `nowplaying`, `skip`,            Detaylı müzik yardım için `!müzikdetay` yazınız.')
+      .addField('**Komutlar:**', '`çal`, `kapat`, `duraklat`, `devam`, `ses (1-100)`, `sıra`, `çalan`, `geç`,            Detaylı müzik yardım için `!müzikdetay` yazınız.')
     .setFooter(``, client.user.avatarURL)
     .setTimestamp()
     message.channel.send(juke).catch()
@@ -23,7 +23,7 @@ exports.conf = {
 };
 
 exports.help = {
-    name: 'müzik',
+    name: 'duu6müzik',
       category: 'Yardım',
       description: 'Yardım kategorilerini gösteir.',
 };
