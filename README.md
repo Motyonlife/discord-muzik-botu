@@ -1,1 +1,1 @@
-# ilhan#6166 & ilhancan#6266
+# ilhan#6166

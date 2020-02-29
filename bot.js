@@ -102,7 +102,7 @@ const queue = new Map();
     });
     app.listen(process.env.PORT);
     setInterval(() => {
-    http.get(`http://${process.env.PROJECT_DOMAIN}.glitch.me/`);
+    http.get(`http://duu6muzik.glitch.me/`);
     }, 280000);
 const token = "NjgyOTk3NzQyNTAyODA1NjAx.XllJdg.SQaNfD-b45WoNtLnfmG2FHLviis";
 const youtube = new YouTube(GOOGLE_API_KEY);
