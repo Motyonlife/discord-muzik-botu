@@ -88,7 +88,7 @@ app.get("/", (request, response) => {
 });
 app.listen(8000);
 setInterval(() => {
-  http.get(`http://duu6muzik.glitch.me/`);
+  http.get(`https://duu6muzik.glitch.me/`);
 }, 280000)
       
 //Duu6 Müzik
