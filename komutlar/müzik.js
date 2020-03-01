@@ -4,7 +4,7 @@ var prefix = ayarlar.prefix;
 exports.run = (client, message, args) => {
   
     const juke = new Discord.RichEmbed()
-    .setColor('GOLD')
+    .setColor('BLUE')
     .setAuthor(`Duu6 | Müzik Komutları`, client.user.avatarURL) 
       .setDescription('**[]()**')
 .setThumbnail(client.user.avatarURL)
@@ -23,7 +23,7 @@ exports.conf = {
 };
 
 exports.help = {
-    name: 'duu6müzik',
+    name: 'müzik',
       category: 'Yardım',
       description: 'Yardım kategorilerini gösteir.',
 };
