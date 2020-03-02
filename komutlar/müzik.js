@@ -5,10 +5,10 @@ exports.run = (client, message, args) => {
   
     const juke = new Discord.RichEmbed()
     .setColor('BLUE')
-    .setAuthor(`Duu6 | Müzik Komutları`, client.user.avatarURL) 
+    .setAuthor(`DUU6 | Müzik Komutları`, client.user.avatarURL) 
       .setDescription('**[]()**')
 .setThumbnail(client.user.avatarURL)
-      .addField('**Komutlar:**', '`çal`, `kapat`, `duraklat`, `devam`, `ses (1-100)`, `sıra`, `çalan`, `geç`,            Detaylı müzik yardım için `!müzikdetay` yazınız.')
+      .addField('**Komutlar:**', '`çal`, `kapat`, `duraklat`, `devam`, `ses (1-100)`, `sıra`, `çalan`, `geç`, `müzikdetay`')
     .setFooter(``, client.user.avatarURL)
     .setTimestamp()
     message.channel.send(juke).catch()
@@ -23,7 +23,7 @@ exports.conf = {
 };
 
 exports.help = {
-    name: 'müzik',
+    name: 'komutlar',
       category: 'Yardım',
       description: 'Yardım kategorilerini gösteir.',
 };
