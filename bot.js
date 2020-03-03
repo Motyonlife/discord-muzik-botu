@@ -104,7 +104,7 @@ const queue = new Map();
     setInterval(() => {
     http.get(`http://duu6muzik.glitch.me/`);
     }, 280000);
-const token = "NjgyOTk3NzQyNTAyODA1NjAx.Xlt_WA.vZPV1xhhIhoJTzHoXQ_NErauAqc";
+const token = "token";
 const youtube = new YouTube(GOOGLE_API_KEY);
 const ytdl = require('ytdl-core');
 const Jimp = require('jimp');
