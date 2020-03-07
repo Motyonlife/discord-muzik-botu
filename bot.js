@@ -158,7 +158,7 @@ client.on('message', async msg => {
 					let index = 0;
           
 				 msg.channel.sendEmbed(new Discord.RichEmbed()                  
-         .setTitle(' DUU6 Müzik | Şarkı Seçimi')
+         .setTitle(' Mechanic Müzik | Müzik Seçimi')
          .setDescription(`${videos.map(video2 => `**${++index} -** ${video2.title}`).join('\n')}`)
          .setFooter('Lütfen 1-10 arasında bir rakam seçiniz 10 saniye içinde liste iptal edilecektir.')
          .setColor('0x36393E'));
@@ -228,7 +228,7 @@ client.on('message', async msg => {
     .setColor('BLUE'));
 		return msg.channel.sendEmbed(new Discord.RichEmbed()
     .setColor('BLUE')
-    .setTitle("  DUU6 Müzik | Çalan")                            
+    .setTitle("  Mechanic Müzik | Çalan")                            
     .addField('Başlık', `[${serverQueue.songs[0].title}](${serverQueue.songs[0].url})`, true)
     .addField("Süre", `${serverQueue.songs[0].durationm}:${serverQueue.songs[0].durations}`, true))
 	} else if (command === 'sıra') {
@@ -238,7 +238,7 @@ client.on('message', async msg => {
     .setColor('BLUE'));
 		  return msg.channel.sendEmbed(new Discord.RichEmbed()
     .setColor('BLUE')
-     .setTitle(' DUU6 Müzik | Şarkı Kuyruğu')
+     .setTitle(' Mechanic Müzik | Şarkı Kuyruğu')
     .setDescription(`${serverQueue.songs.map(song => `**${++index} -** ${song.title}`).join('\n')}`))
     .addField('Şu anda çalınan: ' + `${serverQueue.songs[0].title}`);
 	} else if (command === 'duraklat') {
@@ -335,7 +335,7 @@ function play(guild, song) {
 	dispatcher.setVolumeLogarithmic(serverQueue.volume / 5);
 
 	 serverQueue.textChannel.sendEmbed(new Discord.RichEmbed()                                   
-  .setTitle("** DUU6 Müzik | Müzik Başladı**",`https://cdn.discordapp.com/avatars/473974675194511361/6bb90de9efe9fb80081b185266bb94a6.png?size=2048`)
+  .setTitle("** Mechanic Müzik | Müzik Başladı**",`https://cdn.discordapp.com/avatars/473974675194511361/6bb90de9efe9fb80081b185266bb94a6.png?size=2048`)
   .setThumbnail(`https://i.ytimg.com/vi/${song.id}/default.jpg?width=80&height=60`)
   .addField('\nBaşlık', `[${song.title}](${song.url})`, true)
   .addField("\nSes Seviyesi", `${serverQueue.volume}%`, true)

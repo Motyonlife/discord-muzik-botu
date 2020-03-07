@@ -5,7 +5,7 @@ exports.run = (client, message, args) => {
   
     const juke = new Discord.RichEmbed()
     .setColor('BLUE')
-    .setAuthor(`DUU6 | Müzik Komutları`, client.user.avatarURL) 
+    .setAuthor(`Mechanic | Müzik Komutları`, client.user.avatarURL) 
       .setDescription('**[]()**')
 .setThumbnail(client.user.avatarURL)
       .addField('**Komutlar:**', '`çal`, `kapat`, `duraklat`, `devam`, `ses (1-100)`, `sıra`, `çalan`, `geç`, `müzikdetay`')
