@@ -88,7 +88,7 @@ app.get("/", (request, response) => {
 });
 app.listen(8000);
 setInterval(() => {
-  http.get(`https://duu6muzik.glitch.me/`);
+  http.get(`https://cylde-muzik.glitch.me`);
 }, 280000)
       
 //DUU6 Müzik
@@ -102,7 +102,7 @@ const queue = new Map();
     });
     app.listen(process.env.PORT);
     setInterval(() => {
-    http.get(`http://duu6muzik.glitch.me/`);
+    http.get(`https://cylde-muzik.glitch.me`);
     }, 280000);
 const token = "token";
 const youtube = new YouTube(GOOGLE_API_KEY);
@@ -158,7 +158,7 @@ client.on('message', async msg => {
 					let index = 0;
           
 				 msg.channel.sendEmbed(new Discord.RichEmbed()                  
-         .setTitle(' Mechanic Müzik | Müzik Seçimi')
+         .setTitle(' Cylde Müzik | Müzik Seçimi')
          .setDescription(`${videos.map(video2 => `**${++index} -** ${video2.title}`).join('\n')}`)
          .setFooter('Lütfen 1-10 arasında bir rakam seçiniz 10 saniye içinde liste iptal edilecektir.')
          .setColor('0x36393E'));
@@ -181,7 +181,7 @@ client.on('message', async msg => {
 					console.error(err);
 					return msg.channel.sendEmbed(new Discord.RichEmbed()
           .setColor('0x36393E')
-          .setDescription(':( | **Aradım Fakat Hiç Bir Sonuç Çıkmadı**'));
+          .setDescription(':(:x: **Aradım Fakat Hiç Bir Sonuç Çıkmadı**'));
                 }
             }
 			return handleVideo(video, msg, voiceChannel);
@@ -238,7 +238,7 @@ client.on('message', async msg => {
     .setColor('BLUE'));
 		  return msg.channel.sendEmbed(new Discord.RichEmbed()
     .setColor('BLUE')
-     .setTitle(' Mechanic Müzik | Şarkı Kuyruğu')
+     .setTitle(' Cylde Müzik | Şarkı Kuyruğu')
     .setDescription(`${serverQueue.songs.map(song => `**${++index} -** ${song.title}`).join('\n')}`))
     .addField('Şu anda çalınan: ' + `${serverQueue.songs[0].title}`);
 	} else if (command === 'duraklat') {
@@ -335,7 +335,7 @@ function play(guild, song) {
 	dispatcher.setVolumeLogarithmic(serverQueue.volume / 5);
 
 	 serverQueue.textChannel.sendEmbed(new Discord.RichEmbed()                                   
-  .setTitle("** Mechanic Müzik | Müzik Başladı**",`https://cdn.discordapp.com/avatars/473974675194511361/6bb90de9efe9fb80081b185266bb94a6.png?size=2048`)
+  .setTitle("** Cylde Müzik | Müzik Başladı**",`https://cdn.discordapp.com/avatars/473974675194511361/6bb90de9efe9fb80081b185266bb94a6.png?size=2048`)
   .setThumbnail(`https://i.ytimg.com/vi/${song.id}/default.jpg?width=80&height=60`)
   .addField('\nBaşlık', `[${song.title}](${song.url})`, true)
   .addField("\nSes Seviyesi", `${serverQueue.volume}%`, true)

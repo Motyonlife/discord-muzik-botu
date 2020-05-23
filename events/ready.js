@@ -7,15 +7,15 @@ var prefix = ayarlar.prefix;
 
 module.exports = client => {
 var oyun = [
-        "Mechanic Müzik",
-        "p!komutlar"
+        "Cylde Müzik",
+        "cm!komutlar"
     ];
 
     setInterval(function() {
 
         var random = Math.floor(Math.random()*(oyun.length-0+1)+0);
 
-        client.user.setActivity(oyun[random], "Mechanic Müzik | p!komutlar" );
+        client.user.setActivity(oyun[random], "Cylde Müzik | cm!komutlar" );
         }, 2 * 2500);
     
   console.log(`[${moment().format('YYYY-MM-DD HH:mm:ss')}] BOT: Aktif, Komutlar yüklendi!`);
