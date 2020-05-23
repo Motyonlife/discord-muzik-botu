@@ -79,6 +79,7 @@ client.unload = command => {
 };
 
 //7/24
+
 const http = require('http');
 const express = require('express');
 const app = express();
@@ -91,7 +92,7 @@ setInterval(() => {
   http.get(`https://cylde-muzik.glitch.me`);
 }, 280000)
       
-//DUU6 Müzik
+//Cylde Müzik
 
 const { GOOGLE_API_KEY } = require('./anahtarlar.json');
 const YouTube = require('simple-youtube-api');
