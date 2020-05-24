@@ -89,7 +89,7 @@ app.get("/", (request, response) => {
 });
 app.listen(8000);
 setInterval(() => {
-  http.get(`https://cylde-muzik.glitch.me/`);
+  http.get(`https://cylde-muzik.glitch.me`);
 }, 280000)
       
 //Cylde Müzik
