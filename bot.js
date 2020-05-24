@@ -79,32 +79,22 @@ client.unload = command => {
 };
 
 //7/24
-
-const http = require('http');
 const express = require('express');
 const app = express();
-app.get("/", (request, response) => {
-  console.log("Botu açık tutmak için yeniden bağlandım!");
-  response.sendStatus(200);
-});
-app.listen(8000);
-setInterval(() => {
-  http.get(`https://cylde-muzik.glitch.me`);
-}, 280000)
-      
+const http = require('http');
+    app.get("/", (request, response) => {
+    console.log(`Bot Başarıyla Hostlandı.`);
+    response.sendStatus(200);
+    });
+    app.listen(process.env.PORT);
+    setInterval(() => {
+    http.get(`http://${process.env.PROJECT_DOMAIN}.glitch.me/`);
+    }, 280000);
 //Cylde Müzik
 
 const { GOOGLE_API_KEY } = require('./anahtarlar.json');
 const YouTube = require('simple-youtube-api');
 const queue = new Map(); 
-    app.get("/", (request, response) => {
-    console.log(` XQ Ping`);
-    response.sendStatus(200);
-    });
-    app.listen(process.env.PORT);
-    setInterval(() => {
-    http.get(`https://cylde-muzik.glitch.me`);
-    }, 280000);
 const token = "token";
 const youtube = new YouTube(GOOGLE_API_KEY);
 const ytdl = require('ytdl-core');
